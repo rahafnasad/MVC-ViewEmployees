@@ -1,0 +1,34 @@
+﻿@model List<Emolpyee>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Title</th>
+        </tr>
+    </thead>
+    <tbody>
+     
+            @foreach (var employee in Model)
+            {
+            <tr>
+
+                <td> @employee.Id</td>
+
+                <td> @employee.Name</td>
+                <td> @employee.Age</td>
+                <td> @employee.Title</td>
+            </tr>
+
+
+
+            }
+        
+            
+    </tbody>
+</table>
+
+
+
